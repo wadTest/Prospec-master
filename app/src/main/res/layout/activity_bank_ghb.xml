@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".bank_ghb.BankGHBActivity">
+
+    <!--Content-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--From Main-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="290dp"
+                android:background="@drawable/background1"
+                android:gravity="bottom"
+                android:text="PROSPEC APPRAISAL"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_orange_dark"
+                android:textSize="36dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <!--Main คำสั่งงาน-->
+                <LinearLayout
+                    android:layout_width="290dp"
+                    android:layout_height="190dp"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:background="#f5f590"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/ic_note"
+                        android:tint="@android:color/black" />
+
+                    <Button
+                        android:id="@+id/button1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:background="#fcfc3d"
+                        android:padding="8dp"
+                        android:text="คำสั่งงาน"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <!--Main พิธีการสำรวจนำชี้-->
+                <LinearLayout
+                    android:layout_width="290dp"
+                    android:layout_height="190dp"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:background="#e6bde7"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/ic_number"
+                        android:tint="@android:color/black" />
+
+                    <Button
+                        android:id="@+id/button2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:background="#e991ea"
+                        android:padding="8dp"
+                        android:text="พิธีการสำรวจนำชี้"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <!--Main เอกสารสิทธิ์-->
+                <LinearLayout
+                    android:layout_width="290dp"
+                    android:layout_height="190dp"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:background="#b1f45f"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/ic_person"
+                        android:tint="@android:color/black" />
+
+                    <Button
+                        android:id="@+id/button3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="18dp"
+                        android:background="#9dec3c"
+                        android:padding="8dp"
+                        android:text="เอกสารสิทธิ์"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <!--Main สภาพที่ดิน-->
+                <LinearLayout
+                    android:layout_width="290dp"
+                    android:layout_height="190dp"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:background="#ef9865"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/ic_tree"
+                        android:tint="@android:color/black" />
+
+                    <Button
+                        android:id="@+id/button4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="18dp"
+                        android:background="#ff8b47"
+                        android:padding="8dp"
+                        android:text="สภาพที่ดิน"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="29sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <!--Main สภาพอาคาร-->
+                <LinearLayout
+                    android:layout_width="290dp"
+                    android:layout_height="190dp"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:background="#e48298"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/ic_structure"
+                        android:tint="@android:color/black" />
+
+                    <Button
+                        android:id="@+id/button5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:background="#ed5091"
+                        android:padding="8dp"
+                        android:text="สภาพอาคาร"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <!--Main ประเมินราคาอาคาร-->
+                <LinearLayout
+                    android:layout_width="290dp"
+                    android:layout_height="190dp"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:background="#8ddbdc"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/ic_building"
+                        android:tint="@android:color/black" />
+
+                    <Button
+                        android:id="@+id/button6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:background="#55ccaa"
+                        android:padding="8dp"
+                        android:text="ประเมินราคาอาคาร"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <!--Main ข้อมูลเปรียบเทียบตลาดที่ดิน-->
+                <LinearLayout
+                    android:layout_width="290dp"
+                    android:layout_height="190dp"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:background="#899ee2"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/ic_tree"
+                        android:tint="@android:color/black" />
+
+                    <Button
+                        android:id="@+id/button7"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:background="#5e7cdc"
+                        android:padding="8dp"
+                        android:text="ข้อมูลเปรียบเทียบตลาดที่ดิน"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <!--Main ประเมินราคาที่ดิน-->
+                <LinearLayout
+                    android:layout_width="290dp"
+                    android:layout_height="190dp"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:background="#f9c159"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView8"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/ic_number"
+                        android:tint="@android:color/black" />
+
+                    <Button
+                        android:id="@+id/button8"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:background="#f2aa22"
+                        android:padding="8dp"
+                        android:text="ประเมินราคาที่ดิน"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <!--Main ข้อมูลเปรียบเทียบตลาด ตามประเภททรัพย์สิน-->
+                <LinearLayout
+                    android:layout_width="290dp"
+                    android:layout_height="190dp"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:background="#ff5e60"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView9"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/ic_number"
+                        android:tint="@android:color/black" />
+
+                    <Button
+                        android:id="@+id/button9"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:background="#e73348"
+                        android:padding="8dp"
+                        android:text="ข้อมูลเปรียบเทียบตลาด ตามประเภททรัพย์สิน"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <!--Main ประเมินราคาตลาด-->
+                <LinearLayout
+                    android:layout_width="290dp"
+                    android:layout_height="190dp"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:background="#b1f45f"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView10"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/ic_person"
+                        android:tint="@android:color/black" />
+
+                    <Button
+                        android:id="@+id/button10"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="18dp"
+                        android:background="#9dec3c"
+                        android:padding="8dp"
+                        android:text="ประเมินราคาตลาด"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <!--Main สรุปราคา-->
+                <LinearLayout
+                    android:layout_width="290dp"
+                    android:layout_height="190dp"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:background="#ef9865"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView11"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/ic_structure"
+                        android:tint="@android:color/black" />
+
+                    <Button
+                        android:id="@+id/button11"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="18dp"
+                        android:background="#ff8b47"
+                        android:padding="8dp"
+                        android:text="สรุปราคา"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="29sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

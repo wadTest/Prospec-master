@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--Toolbar-->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_land_tab1"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <!--Content-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <!--From-->
+        <LinearLayout
+            android:paddingBottom="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--Tile ระบบสาธารณูปโภค-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rabob1"
+                android:textSize="@dimen/h1"
+                android:textStyle="bold" />
+
+            <!--Tile ระบบสาธารณูปโภคพื้นฐาน-->
+            <TextView
+                android:layout_marginTop="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rabob2"
+                android:textSize="@dimen/h1"
+                android:textStyle="bold" />
+
+            <!--Tile ระบบไฟฟ้า-->
+            <TextView
+                android:layout_marginTop="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rabob3"
+                android:textSize="@dimen/h2"
+                android:textStyle="bold" />
+
+            <!--ระบบไฟฟ้า-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <!--Tile-->
+                <RadioButton
+                    android:id="@+id/radioButton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="มีระบบไฟฟ้า"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold" />
+
+                <!--TextFiled-->
+                <Spinner
+                    android:id="@+id/spinner1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <!--จำนวนแปลง-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <!--Tile-->
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ไม่มีระบบไฟฟ้า"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold" />
+
+                <!--TextFiled-->
+                <EditText
+                    android:id="@+id/EditText1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:hint="ห่างจากจุดที่มี...เมตร/กิโลเมตร"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/edit_text" />
+            </LinearLayout>
+
+            <!--Tile ระบบประปา-->
+            <TextView
+                android:layout_marginTop="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rabob4"
+                android:textSize="@dimen/h2"
+                android:textStyle="bold" />
+
+            <!--มีระบบประปา-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <!--Tile-->
+                <RadioButton
+                    android:id="@+id/radioButton3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="มีระบบประปา"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold" />
+
+                <!--TextFiled-->
+                <Spinner
+                    android:id="@+id/spinner2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <!--ไม่มีระบบประปา-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <!--Tile-->
+                <RadioButton
+                    android:id="@+id/radioButton4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ไม่มีระบบประปา"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold" />
+
+                <!--TextFiled-->
+                <EditText
+                    android:id="@+id/EditText2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:hint="@string/not_null"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/edit_text" />
+            </LinearLayout>
+
+            <!--Tile ระบบโทรศัพท์พื้นฐาน-->
+            <TextView
+                android:layout_marginTop="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rabob5"
+                android:textSize="@dimen/h2"
+                android:textStyle="bold" />
+
+            <!--Tile-->
+            <RadioButton
+                android:id="@+id/radioButton5"
+                android:layout_marginTop="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="มีระบบโทรศัพท์พื้นฐาน"
+                android:textSize="@dimen/h2"
+                android:textStyle="bold" />
+
+            <!--Tile-->
+            <RadioButton
+                android:id="@+id/radioButton6"
+                android:layout_marginTop="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ไม่มีระบบโทรศัพท์พื้นฐาน"
+                android:textSize="@dimen/h2"
+                android:textStyle="bold" />
+
+            <!--Tile สัญญาณโทรศัพท์เคลื่อนที่-->
+            <TextView
+                android:layout_marginTop="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rabob6"
+                android:textSize="@dimen/h2"
+                android:textStyle="bold" />
+
+            <!--Tile-->
+            <RadioButton
+                android:id="@+id/radioButton7"
+                android:layout_marginTop="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="มีสัญญาณโทรศัพท์เคลื่อนที่"
+                android:textSize="@dimen/h2"
+                android:textStyle="bold" />
+
+            <!--Tile-->
+            <RadioButton
+                android:id="@+id/radioButton8"
+                android:layout_marginTop="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ไม่มีสัญญาณโทรศัพท์เคลื่อนที่"
+                android:textSize="@dimen/h2"
+                android:textStyle="bold" />
+
+            <!--Tile ท่อระบายน้ำ-->
+            <TextView
+                android:layout_marginTop="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rabob7"
+                android:textSize="@dimen/h2"
+                android:textStyle="bold" />
+
+            <!--Tile-->
+            <RadioButton
+                android:id="@+id/radioButton9"
+                android:layout_marginTop="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="มีท่อระบายน้ำ"
+                android:textSize="@dimen/h2"
+                android:textStyle="bold" />
+
+
+            <!--Tile-->
+            <RadioButton
+                android:id="@+id/radioButton10"
+                android:layout_marginTop="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ไม่มีท่อระบายน้ำ"
+                android:textSize="@dimen/h2"
+                android:textStyle="bold" />
+
+            <!--Tile-->
+            <RadioButton
+                android:id="@+id/radioButton11"
+                android:layout_marginTop="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ไม่มีสัญญาณโทรศัพท์เคลื่อนที่"
+                android:textSize="@dimen/h2"
+                android:textStyle="bold" />
+
+            <!--Tile ไฟฟ้าส่องสว่าง-->
+            <TextView
+                android:layout_marginTop="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rabob8"
+                android:textSize="@dimen/h2"
+                android:textStyle="bold" />
+
+            <!--Tile-->
+            <RadioButton
+                android:id="@+id/radioButton12"
+                android:layout_marginTop="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ไม่ไฟฟ้าส่องสว่าง"
+                android:textSize="@dimen/h2"
+                android:textStyle="bold" />
+
+            <!--Tile-->
+            <RadioButton
+                android:id="@+id/radioButton13"
+                android:layout_marginTop="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ไม่มีท่อระบายน้ำ"
+                android:textSize="@dimen/h2"
+                android:textStyle="bold" />
+
+            <!--Tile ทางเข้าออกไปสู่ที่ดิน-->
+            <TextView
+                android:layout_marginTop="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rabob9"
+                android:textSize="@dimen/h1"
+                android:textStyle="bold" />
+
+            <!--ถนนสายหลัก-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <!--Tile-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rabob10"
+                    android:textSize="@dimen/h1"
+                    android:textStyle="bold" />
+
+                <!--TextFiled-->
+                <EditText
+                    android:id="@+id/EditText3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:hint="@string/not_null"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/edit_text" />
+            </LinearLayout>
+
+            <!--จุดเริ่มต้น-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <!--Tile-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rabob11"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold" />
+
+                <!--TextFiled-->
+                <EditText
+                    android:id="@+id/EditText4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:hint="@string/not_null"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/edit_text" />
+            </LinearLayout>
+
+            <!--ถนนผ่านหน้าที่ดิน-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <!--Tile-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rabob12"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold" />
+
+                <!--TextFiled-->
+                <EditText
+                    android:id="@+id/EditText5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:hint="@string/not_null"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/edit_text" />
+            </LinearLayout>
+
+            <!--ถนนสายรอง-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <!--Tile-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rabob13"
+                    android:textSize="@dimen/h1"
+                    android:textStyle="bold" />
+
+                <!--TextFiled-->
+                <EditText
+                    android:id="@+id/EditText6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:hint="@string/not_null"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/edit_text" />
+            </LinearLayout>
+
+            <!--จุดเริ่มต้น-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <!--Tile-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rabob11"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold" />
+
+                <!--TextFiled-->
+                <EditText
+                    android:id="@+id/EditText7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:hint="@string/not_null"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/edit_text" />
+            </LinearLayout>
+
+            <!--ถนนผ่านหน้าที่ดิน-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <!--Tile-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rabob12"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold" />
+
+                <!--TextFiled-->
+                <EditText
+                    android:id="@+id/EditText8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:hint="@string/not_null"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/edit_text" />
+            </LinearLayout>
+
+            <!--ซอยสาธารณะหลัก-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <!--Tile-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rabob14"
+                    android:textSize="@dimen/h1"
+                    android:textStyle="bold" />
+
+                <!--TextFiled-->
+                <EditText
+                    android:id="@+id/EditText9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:hint="@string/not_null"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/edit_text" />
+            </LinearLayout>
+
+            <!--จุดเริ่มต้น-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <!--Tile-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rabob11"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold" />
+
+                <!--TextFiled-->
+                <EditText
+                    android:id="@+id/EditText10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:hint="@string/not_null"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/edit_text" />
+            </LinearLayout>
+
+            <!--ถนนผ่านหน้าที่ดิน-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <!--Tile-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rabob12"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold" />
+
+                <!--TextFiled-->
+                <EditText
+                    android:id="@+id/EditText11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:hint="@string/not_null"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/edit_text" />
+            </LinearLayout>
+
+            <!--ซอยสาธารณะย่อย-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <!--Tile-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rabob15"
+                    android:textSize="@dimen/h1"
+                    android:textStyle="bold" />
+
+                <!--TextFiled-->
+                <EditText
+                    android:id="@+id/EditText12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:hint="@string/not_null"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/edit_text" />
+            </LinearLayout>
+
+            <!--จุดเริ่มต้น-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <!--Tile-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rabob11"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold" />
+
+                <!--TextFiled-->
+                <EditText
+                    android:id="@+id/EditText13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:hint="@string/not_null"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/edit_text" />
+            </LinearLayout>
+
+            <!--ถนนผ่านหน้าที่ดิน-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <!--Tile-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rabob15"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold" />
+
+                <!--TextFiled-->
+                <EditText
+                    android:id="@+id/EditText14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:hint="@string/not_null"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/edit_text" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

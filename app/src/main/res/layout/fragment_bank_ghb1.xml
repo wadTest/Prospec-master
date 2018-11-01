@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--Toolbar-->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_land_tab1"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <!--Content-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <!--From-->
+        <LinearLayout
+            android:paddingBottom="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--Process-->
+            <ImageView
+                android:id="@+id/imvProcess"
+                android:src="@drawable/zero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!--Main คำสั่งงาน-->
+            <TextView
+                android:id="@id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:text="คำสั่งงาน"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/h1"
+                android:textStyle="bold" />
+
+            <!--Main ผู้กู้ราย-->
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="ผู้กู้ราย"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/h1"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!--Tile ชื่อ-สกุล-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/oder"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold" />
+
+                <!--TextFiled-->
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:hint="@string/not_null"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/edit_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!--Tile เบอร์โทร-->
+                <TextView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/telephone"
+                    android:textSize="@dimen/h2"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold" />
+
+                <!--TextFiled-->
+                <EditText
+                    android:id="@+id/EditText2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:hint="@string/not_null"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/edit_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <!--Tile ID Line-->
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/id_line" />
+
+                <!--TextFiled-->
+                <EditText
+                    android:id="@+id/EditText3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:hint="@string/not_null"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/edit_text" />
+
+                <!--Tile E-amil-->
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/email" />
+
+                <!--TextFiled-->
+                <EditText
+                    android:id="@+id/EditText4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:hint="@string/not_null"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/edit_text"  />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView7"
+                android:text="สถานที่ติดต่อ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/h1"
+                android:textStyle="bold"  />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <!--Tile บ้านเลขที่-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/home_numbet" />
+
+                <!--TextFiled-->
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:hint="@string/not_null"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/edit_text" />
+
+                <!--Tile ชื่อโครงการ-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/project_name" />
+
+                <!--TextFiled-->
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="16dp"
+                    android:hint="@string/not_null"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/edit_text"  />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <!--Tile ซอยย่อยโครงการ-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/soi_project" />
+
+                <!--TextFiled-->
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:hint="@string/not_null"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/edit_text" />
+
+                <!--Tile ซอยสาธารณะ-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/public_road" />
+
+                <!--TextFiled-->
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="16dp"
+                    android:hint="@string/not_null"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/edit_text"  />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <!--Tile จังหวัด-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/province" />
+
+                <!--Spinner จังหวัด-->
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <!--Tile อำเภอ-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/district1"  />
+
+                <!--Spinner อำเภอ-->
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!--Tile ตำบล-->
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/district" />
+
+                <!--Spinner ตำบล-->
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <!--Tile รหัสไปรษณีย์-->
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/zip_code"  />
+
+                <!--Spinner รหัสไปรษณีย์-->
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/h1"
+                android:textStyle="bold"
+                android:text="สินเชื่อผู้รับเรื่อง" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <!--Tile ชื่อ-สกุล-->
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/oder"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold" />
+
+                <!--TextFiled-->
+                <EditText
+                    android:id="@+id/EditText1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:hint="@string/not_null"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/edit_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <!--Tile เลขที่บัญชีเงินกู้-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/loan_account_number"  />
+
+                <!--TextFiled-->
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:hint="@string/not_null"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/edit_text" />
+
+                <!--Tile วันที่-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/date" />
+
+                <!--TextFiled-->
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="16dp"
+                    android:hint="@string/not_null"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/edit_text"  />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!--Tile Campaign-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/campaign"  />
+
+                <!--TextFiled-->
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:hint="@string/not_null"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/edit_text" />
+
+                <!--Tile วงเงินกู้-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/loan" />
+
+                <!--TextFiled-->
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="16dp"
+                    android:hint="@string/not_null"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/edit_text"  />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/h1"
+                android:textStyle="bold"
+                android:text="หลักประกัน" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!--Tile โฉลดเลขที่-->
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/deed_no"  />
+
+                <!--TextFiled-->
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:hint="@string/not_null"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/edit_text" />
+
+                <!--Tile เนื้อที่่ดิน-->
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/land" />
+
+                <!--TextFiled-->
+                <EditText
+                    android:id="@+id/EditText6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="16dp"
+                    android:hint="@string/not_null"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/edit_text"  />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!--Tile จังหวัด-->
+                <TextView
+                    android:id="@+id/textView26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/province1" />
+
+                <!--Spinner จังหวัด-->
+                <Spinner
+                    android:id="@+id/spinner5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/h1"
+                android:textStyle="bold"
+                android:text="วัตถุประสงค์" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!--Tile วัตถุประสงค์การประเมิน-->
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/loan_type" />
+
+                <Spinner
+                    android:id="@+id/spinner6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

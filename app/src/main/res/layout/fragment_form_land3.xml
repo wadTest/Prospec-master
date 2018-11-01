@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--Toolbar-->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_land_tab1"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <!--Content-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <!--From-->
+        <LinearLayout
+            android:paddingBottom="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--Tile กรรมสิทธิ์และภาระผูกพัน-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kammasit1"
+                android:textSize="@dimen/h1"
+                android:textStyle="bold" />
+
+            <!--Tile รูปแบบกรรมสิทธิ์-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kammasit2"
+                android:textSize="@dimen/h1"
+                android:textStyle="bold" />
+
+                <!--Select-->
+                <RadioButton
+                    android:id="@+id/radioButton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/h2"
+                    android:text="กรรมสิทธิ์สมบูรณ์" />
+
+            <!--กรรมสิทธิ์สมบูรณ์-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+
+                <!--Tile-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="@string/kammasit3"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold" />
+
+                <!--TextFiled-->
+                <EditText
+                    android:id="@+id/EditText1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:hint="@string/not_null"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/edit_text" />
+            </LinearLayout>
+
+            <!--Select-->
+            <RadioButton
+                android:id="@id/radioButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="สิทธิการเช่า (มูลค่าของผู้เเช่า)"
+                android:textSize="@dimen/h2"/>
+
+            <!--Select-->
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/h2"
+                android:text="กรรมสิทธิ์สมบูรณ์ภายใต้สัญญาเช่า (มูลค่าของผู้เให้เช่า)" />
+
+
+            <!--Tile ภาระหนี้-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kammasit4"
+                android:textSize="@dimen/h1"
+                android:textStyle="bold" />
+
+            <!--ต้องตรวจสอบหรือไม่-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <!--Tile-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kammasit5"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold" />
+
+                <!--Select-->
+                <RadioButton
+                    android:id="@+id/radioButton4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:textSize="@dimen/h2"
+                    android:text="@string/location16" />
+
+                <!--Select-->
+                <RadioButton
+                    android:id="@+id/radioButton5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:textSize="@dimen/h2"
+                    android:text="@string/location17" />
+
+            </LinearLayout>
+
+            <!--Tile ภาระจำนอง-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kammasit6"
+                android:textSize="@dimen/h1"
+                android:textStyle="bold" />
+
+            <!--ประเภทภาระหนี้-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <!--Tile-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kammasit7"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold" />
+
+                <!--TextFiled-->
+                <Spinner
+                    android:id="@+id/spinner1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <!--เจ้าหนี้จำนอง-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <!--Tile-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kammasit8"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold" />
+
+                <!--TextFiled-->
+                <EditText
+                    android:id="@id/EditText2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:hint="@string/not_null"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/edit_text" />
+            </LinearLayout>
+
+            <!--วงเงินจำนอง-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <!--Tile-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kammasit9"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold" />
+
+                <!--TextFiled-->
+                <EditText
+                    android:id="@+id/EditText3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:hint="@string/not_null"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/edit_text" />
+            </LinearLayout>
+
+
+            <!--Tile ขายฝาก-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kammasit10"
+                android:textSize="@dimen/h1"
+                android:textStyle="bold" />
+
+            <!--ประเภทภาระหนี้-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <!--Tile-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kammasit11"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold" />
+
+                <!--TextFiled-->
+                <Spinner
+                    android:id="@+id/spinner2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <!--ผู้รับขายฝาก-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <!--Tile-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kammasit12"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold" />
+
+                <!--TextFiled-->
+                <EditText
+                    android:id="@+id/EditText4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:hint="@string/not_null"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/edit_text" />
+            </LinearLayout>
+
+            <!--วันกำหนดไถ่ถอน-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <!--Tile-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kammasit13"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold" />
+
+                <!--TextFiled-->
+                <DatePicker
+                    android:id="@+id/dataPicker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:textColorHint="@color/edit_text" />
+            </LinearLayout>
+
+            <!--Tile ภาระผูกพันตามเอกสารสิทธิ์-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kammasit14"
+                android:textSize="@dimen/h1"
+                android:textStyle="bold" />
+
+            <!--ต้องตรวจสอบหรือไม่-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <!--Tile-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kammasit15"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold" />
+
+                <!--Select-->
+                <RadioButton
+                    android:id="@+id/radioButton6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:textSize="@dimen/h2"
+                    android:text="@string/location16" />
+
+                <!--Select-->
+                <RadioButton
+                    android:id="@+id/radioButton7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:textSize="@dimen/h2"
+                    android:text="@string/location17" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <!--Select-->
+                <RadioButton
+                    android:id="@+id/radioButton8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/h2"
+                    android:text="@string/location16" />
+
+                <RadioButton
+                    android:id="@+id/radioButton9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:textSize="@dimen/h2"
+                    android:text="@string/location17" />
+            </LinearLayout>
+
+            <!--Tile ที่ตั้งตามชื่อทำเล-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/location18"
+                android:textSize="@dimen/h1"
+                android:textStyle="bold" />
+
+            <!--ภาระการเช่า-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButton10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:textSize="@dimen/h2"
+                    android:text="ภาระการเช่า" />
+
+                <!--TextFiled-->
+                <EditText
+                    android:id="@+id/EditText5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:hint="@string/not_null"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/edit_text" />
+            </LinearLayout>
+
+            <!--ภาระจำยอม-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButton11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:textSize="@dimen/h2"
+                    android:text="ภาระจำยอม" />
+
+                <!--TextFiled-->
+                <EditText
+                    android:id="@+id/EditText6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:hint="@string/not_null"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/edit_text" />
+            </LinearLayout>
+
+            <!--สิทธิเก็บกิน-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButton12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:textSize="@dimen/h2"
+                    android:text="สิทธิเก็บกิน" />
+
+                <!--TextFiled-->
+                <EditText
+                    android:id="@+id/EditText7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:hint="@string/not_null"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/edit_text" />
+            </LinearLayout>
+
+            <!--สิทธิอาศัย-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButton13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:textSize="@dimen/h2"
+                    android:text="สิทธิอาศัย" />
+
+                <!--TextFiled-->
+                <EditText
+                    android:id="@id/EditText8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:hint="@string/not_null"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/edit_text" />
+            </LinearLayout>
+
+            <!--สิทธิเหนือพื้นดิน-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButton14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:textSize="@dimen/h2"
+                    android:text="สิทธิเหนือพื้นดิน" />
+
+                <!--TextFiled-->
+                <EditText
+                    android:id="@+id/EditText9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:hint="@string/not_null"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/edit_text" />
+            </LinearLayout>
+
+            <!--ภาระติดพันในอสังหาริมทรัพย์-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButton15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:textSize="@dimen/h2"
+                    android:text="ภาระติดพันในอสังหาริมทรัพย์" />
+
+                <!--TextFiled-->
+                <EditText
+                    android:id="@+id/EditText10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:hint="@string/not_null"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/edit_text" />
+            </LinearLayout>
+
+                <!--Tile-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kammasit16"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold" />
+
+            <!--การตรวจสอบอายัด-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButton16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:textSize="@dimen/h2"
+                    android:text="ไม่มีอายัด" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:textSize="@dimen/h2"
+                    android:text="มีการอายัด" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

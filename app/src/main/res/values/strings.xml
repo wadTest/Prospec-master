@@ -1,0 +1,614 @@
+<resources>
+
+    <!--fragment_bank_ghb1-->
+    <string name="oder">ชื่อ-สกุล</string>
+    <string name="order">คำสั่งงาน</string>
+    <string name="name">ผู้กู้ราย</string>
+    <string name="name1">ชื่อ-สกุล</string>
+    <string name="telephone">เบอร์โทร</string>
+    <string name="id_line">ID line</string>
+    <string name="email">E-mail</string>
+    <string name="contact">สถานที่ติดต่อ</string>
+    <string name="home_numbet">บ้านเลขที่</string>
+    <string name="project_name">ชื่อโครงการ</string>
+    <string name="soi_project">ซอยย่อยโครงการ่</string>
+    <string name="public_road">ซอยสาธารณะ</string>
+    <string name="road">ถนน</string>
+    <string name="district">ตำบล/แขวง</string>
+    <string name="district1">อำเภอ/เขต</string>
+    <string name="province">จังหวัด</string>
+    <string name="zip_code">รหัสไปรษณีย์</string>
+    <string name="recipient">สินเชื่อผู้รับเรื่อง</string>
+    <string name="text_name2">ชื่อ-สกุล</string>
+    <string name="loan_account_number">เลขที่บัญชีเงินกู้</string>
+    <string name="date">กดเลือกวันที่</string>
+    <string name="campaign">Campaign</string>
+    <string name="loan">วงเงินกู้</string>
+    <string name="guarantee">หลักประกัน</string>
+    <string name="deed_no">โฉนดเลขที่</string>
+    <string name="land">เนื้อที่ดิน</string>
+    <string name="province1">จังหวัด</string>
+    <string name="loan_type">ประเภทเอกเงินกู้</string>
+    <string name="evaluation_objectives">วัตถุประสงค์การประเมิน</string>
+
+    <!--fragment_form_land-->
+    <string name="type_doc_title">ประเภทเอกสารสิทธิ์</string>
+    <string name="index_doc">เลขที่เอกสารสิทธิ์</string>
+    <string name="num_doc">เลขที่ดิน</string>
+    <string name="rawang">ระวาง</string>
+    <string name="page">หน้าที่</string>
+    <string name="area">เนื้อที่ดิน</string>
+    <string name="num_titledeed">จำนวนกลุ่ม</string>
+    <string name="unit_titledeed">แปลง</string>
+    <string name="number">กลุ่มที่</string>
+    <string name="number1">ลำดับที่</string>
+    <string name="number2">หน้าสำรวจ</string>
+    <string name="number3">หน้าที่</string>
+    <string name="number4">เล่มที่</string>
+    <string name="number5">จำนวนแปลง</string>
+    <string name="ekasansit1">เอกสารสิทธิ์ที่ตั้งอาคารชุด</string>
+    <string name="not_null">กรอกข้อมูล</string>
+
+    <!--fragment_form_land2-->
+    <string name="location">ที่ตั้งที่ดิน</string>
+    <string name="location1">ที่ตั้งตามเอกสารสิทธิ์</string>
+    <string name="location2">จังหวัด</string>
+    <string name="location3">อำเภอ</string>
+    <string name="location4">ตำบล</string>
+    <string name="location5">ที่ตั้งตามเขตการปกครอง</string>
+    <string name="location6">หมู่ที่</string>
+    <string name="location7">ชื่อหมู่บ้าน</string>
+    <string name="location8">รหัสไปรษณีย์</string>
+    <string name="location9">ที่ตั้งตามชื่อทำเล</string>
+    <string name="location11">ถนนสายหลัก</string>
+    <string name="location12">ถนนสายรอง</string>
+    <string name="location13">ซอยสาธารณะหลัก</string>
+    <string name="location14">ซอยสาธารณะย่อย</string>
+    <string name="location15">**ที่ตั้งอยู่ในโครงการจัดสรรหรือไม่**</string>
+    <string name="location18">ที่ตั้งตามชื่อทำเล</string>
+    <string name="location19">ชื่อโครงการ</string>
+    <string name="location20">ซอยหลักโครงการ</string>
+    <string name="location21">ซอยย่อยโครงการ</string>
+
+    <!--fragment_form_land3-->
+    <string name="kammasit1">กรรมสิทธิ์และภาระผูกพัน</string>
+    <string name="kammasit2">รูปแบบกรรมสิทธิ์</string>
+    <string name="kammasit3">ผู้ถือกรรมสิทธิ์</string>
+    <string name="kammasit4">ภาระหนี้</string>
+    <string name="kammasit5">ต้องตรวจสอบหรือไม่</string>
+    <string name="kammasit6">ภาระจำนอง</string>
+    <string name="kammasit7">ประเภทภาระหนี้</string>
+    <string name="kammasit8">เจ้าหนี้จำนอง</string>
+    <string name="kammasit9">วงเงินจำนอง</string>
+    <string name="kammasit10">ขายฝาก</string>
+    <string name="kammasit11">ประเภทภาระหนี้</string>
+    <string name="kammasit12">ผู้รับขายฝาก</string>
+    <string name="kammasit13">วันกำหนดไถ่ถอน</string>
+    <string name="kammasit14">ภาระผูกพันตามเอกสารสิทธิ์</string>
+    <string name="kammasit15">ต้องตรวจสอบหรือไม่</string>
+    <string name="kammasit16">การตรวจสอบอายัด</string>
+
+    <!--fragment_form_land4-->
+    <string name="paraputpun1">ภาระผูกพันตามสภาพทรัพย์สิน</string>
+
+    <!--fragment_form_land5-->
+    <string name="pubpung1">ส่วนปรับปรุงที่ดิน</string>
+    <string name="pubpung2">ที่ดินพร้อมสิ่งปลูกสร้าง</string>
+    <string name="pubpung3">ที่ดินเปล่า</string>
+    <string name="pubpung4">ทำเลที่ตั้งแปลง</string>
+    <string name="pubpung5">ระดับที่ดิน</string>
+    <string name="pubpung6">**ระดับสูงกว่าหรือต่ำกว่าถนนหน้าที่ดิน (+/-เมตร)**</string>
+    <string name="pubpung7">พื้นที่ถม</string>
+    <string name="pubpung8">ถมแล้ว(กี่%)</string>
+    <string name="pubpung9">พื้นที่ถม</string>
+    <string name="pubpung10">ยังไม่ถม(กี่%)</string>
+    <string name="pubpung11">ผลรวม</string>
+    <string name="pubpung12">เฉลี่ย</string>
+    <string name="pubpung13">ถมแล้ว</string>
+    <string name="pubpung14">ยังไม่ถม</string>
+    <string name="pubpung15">พื้นที่ถม</string>
+    <string name="pubpung16">ระดับดิน</string>
+
+    <!--fragment_form_land6-->
+    <string name="rabob1">ระบบสาธารณูปโภค</string>
+    <string name="rabob2">ระบบสาธารณูปโภคพื้นฐาน</string>
+    <string name="rabob3">ระบบไฟฟ้า</string>
+    <string name="rabob4">ระบบประปา</string>
+    <string name="rabob5">ระบบโทรศัพท์พื้นฐาน</string>
+    <string name="rabob6">สัญญาณโทรศัพท์เคลื่อนที่</string>
+    <string name="rabob7">ท่อระบายน้ำ</string>
+    <string name="rabob8">มีไฟฟ้าส่องสว่าง</string>
+    <string name="rabob9">ทางเข้าออกไปสู่ที่ดิน</string>
+    <string name="rabob10">ถนนสายหลัก</string>
+    <string name="rabob11">จุดเริ่มต้น</string>
+    <string name="rabob12">ถนนผ่านหน้าที่ดิน</string>
+    <string name="rabob13">ถนนสายรอง</string>
+    <string name="rabob14">ซอยสาธารณะหลัก</string>
+    <string name="rabob15">ซอยสาธารณะย่อย</string>
+
+    <!--fragment_form_land7-->
+    <string name="roobrang1">รูปร่างที่ดินและสภาพแวดล้อม</string>
+    <string name="roobrang2">สภาพแวดล้อมโดยรอบที่ดิน</string>
+    <string name="roobrang3">รูปร่างที่ดิน</string>
+    <string name="roobrang4">สถานที่สำคัญใกกล้เคียง(สถานทีอ้างอิงหลักอยู่อันดับแรก)</string>
+    <string name="roobrang5">ระยะห่าง</string>
+    <string name="roobrang6">เมตร</string>
+
+    <!--fragment_form_land8-->
+    <string name="laws1">ข้อกฎหมายที่เกี่ยวข้อง</string>
+    <string name="laws2">กฎหมายผังเมือง</string>
+    <string name="laws3">กฎหมายผังเมือง</string>
+    <string name="laws4">ประเภท ที่อยู่อาศัยหนาแน่นน้อย</string>
+    <string name="laws5">ประเภท ที่อยู่อาศัยหนาแน่นปานกลาง</string>
+    <string name="laws6">ประเภท ที่อยู่อาศัยหนาแน่นมาก</string>
+    <string name="laws7">ประเภท พาณิชยกรรมและที่อยู่อาศัยหนาแน่นมาก</string>
+    <string name="laws8">ประเภท อุตสาหกรรมและคลังสินค้า</string>
+    <string name="laws9">ประเภท คลังสินค้า</string>
+    <string name="laws10">ประเภท อุตสาหกรรมที่ไม่เป็นพิษต่อชุมชนและคลังสินค้า</string>
+    <string name="laws11">ประเภท ชนบทและเกษตรกรรม</string>
+    <string name="laws12">ประเภท อนุรักษ์ชนบทและเกษตรกรรม</string>
+    <string name="laws13">ประเภท ที่โล่งเพื่อนันทนาการและการรักษาคุณภาพสิ่งแวดล้อม</string>
+    <string name="laws14">ประเภท ที่โล่งเพื่อนันทนาการและการรักษาคุณภาพสิ่งแวดล้อม</string>
+    <string name="laws15">ประเภท สถาบันการศึกษา</string>
+    <string name="laws16">ประเภท สถาบันศาสนา</string>
+    <string name="laws17">สถาบันราชการ การสาธารณูปโภคและสาธารณูปการ</string>
+    <string name="laws18">ประเภท ชุมชนที่อยูอาศัย</string>
+    <string name="laws19">บล็อคเลขที่</string>
+    <string name="laws20">โครงการเวณคืน</string>
+    <string name="laws21">แนวสายไฟฟ้าแรงสูง</string>
+    <string name="laws22">แนวรถไฟฟ้าใต้ดิน</string>
+    <string name="laws23">เขตป่าไม้</string>
+    <string name="laws24">อยู่ในเขตเทศบาล</string>
+    <string name="laws25">อื่นๆ</string>
+
+    <!--fragment_form_land9-->
+    <string name="check1">การตรวจตำแหน่งที่ดิน</string>
+    <string name="check2">ตรวจเอกสารสำนักงานที่ดิน</string>
+    <string name="check3">เอกสารที่สำนักงานที่ดิน</string>
+    <string name="check4">เอกสารสิทธิ์ฉบับกรมที่ดิน</string>
+    <string name="check5">สัญญาขาย</string>
+    <string name="check6">สัญญาให้</string>
+    <string name="check7">สัญญาจำนอง</string>
+    <string name="check8">แผนที่ระวาง</string>
+    <string name="check9">*กรณี ตรวจสอบได้</string>
+    <string name="check10">การตรวจสอบตำแหน่งที่ดิน</string>
+    <string name="check11">แปลงคงเหลือ</string>
+    <string name="check12">บันทึกอายัด</string>
+    <string name="check13">บันทึกภาระจำยอม</string>
+    <string name="check14">อื่นๆ</string>
+    <string name="check15">วิธีการนำชี้ที่ตั้ง</string>
+    <string name="check16">นำชี้โดยบุคคล</string>
+    <string name="check17">ชื่อ</string>
+    <string name="check18">ความเกี่ยวพัน</string>
+    <string name="check19">เลขที่บัตรประชาชน</string>
+    <string name="check20">นำชี้โดยเอกสาร</string>
+    <string name="check21">เอกสารประกอบการนำชี้แทน</string>
+
+
+    <string name="location16">ใช่</string>
+    <string name="location17">ไม่ใช่</string>
+
+    <string name="ekakasit">เอกสารสิทธิ์</string>
+    <string name="massage_have_space">โปรดกรอกให้ครบทุกช่อง</string>
+    <string name="title_have_space">มีช่องว่าง</string>
+
+    <string name="title_activity_bank1_tab1">Bank1Tab1Activity</string>
+    <string name="title_type_doc1">ยังไม่เลือก ประเภทเอกสารสิทธิ์</string>
+    <string name="message_type_doc1">กรุณา เลือกชนิดประเภทเอกสารสิทธิ์</string>
+    <string name="title_comfirm">โปรดใส่ข้อมูล</string>
+
+    <string name="app_name">Prospec</string>
+
+
+    <!--Spinner activity_land_tab1-->
+    <string-array name="category">
+        <item>โฉนดที่ดิน</item>
+        <item>โฉนดตราจอง</item>
+        <item>นส.3ก</item>
+        <item>อช.2</item>
+        <item>อื่นๆ</item>
+    </string-array>
+
+    <!--Checkbox activity_land_tab2-->
+    <string name="title_activity_land_tab2"></string>
+    <string name="yes">ใช่</string>
+    <string name="no">ไม่ใช่</string>
+
+
+    <!--Spinner activity_land_tab3-->
+    <string-array name="category1">
+        <item>จำนอง</item>
+        <item>ขายฝาก</item>
+    </string-array>
+
+    <!--Spinner activity_land_tab5-->
+    <string-array name="building1">
+        <item>เพื่อการอยู่อาศัย</item>
+        <item>เพื่อการอุตสาหกรรม</item>
+        <item>เพื่อการเกษตร</item>
+    </string-array>
+
+    <string-array name="namelocation">
+        <item>หัวมุม</item>
+        <item>ริมสุด</item>
+        <item>กลาง</item>
+    </string-array>
+
+    <!--Spinner activity_land_tab6-->
+    <string-array name="electricity">
+        <item>พาดเสาบนดิน</item>
+        <item>เดินท่อใต้ดิน</item>
+    </string-array>
+
+    <string-array name="plumbing">
+        <item>ระบบประปา กปภ.หรือเทียบเท่า</item>
+        <item>ระบบประปาภายในโครงการ</item>
+        <item>ระบบประปาชุมชน</item>
+    </string-array>
+
+    <!--Spinner activity_land_tab9-->
+    <string-array name="location">
+        <item>แผนที่ระวาง</item>
+        <item>แปลงคงเหลือ</item>
+        <item>วิหมุดหลักเขต</item>
+        <item>แผนที่โฉนดเป็นรูปเฉพาะ</item>
+        <item>แปลงข้างเคียง</item>
+        <item>ไม่สามารถตรวจสอบได้</item>
+    </string-array>
+
+    <!--Spinner activity_building_tab1-->
+    <string-array name="names">
+        <item>บ้านเดี่ยว</item>
+        <item>บ้านแฝด</item>
+        <item>ทาวน์เฮาส์</item>
+        <item>อาคารพาณิชย์</item>
+        <item>มินิออฟฟิศ</item>
+        <item>มินิแฟคตอรี่</item>
+        <item>ห้องชุดหน่วยย่อย</item>
+        <item>อาคารคอนโดมิเนียม</item>
+        <item>หอพัก/อพาร์ทเมนท์</item>
+        <item>โรงแรม</item>
+        <item>รีสอร์ท</item>
+        <item>อาคารสำนักงาน</item>
+        <item>โกดัง</item>
+        <item>โรงงาน</item>
+        <item>โรงพยาบาล</item>
+        <item>สถานศึกษา</item>
+        <item>อาคารจอดรถ</item>
+        <item>สโมสรกีฬา</item>
+        <item>สนามกอล์ฟ</item>
+        <item>โรงเรื่อน</item>
+        <item>อื่นๆ</item>
+    </string-array>
+
+    <string-array name="structure">
+        <item>คอนกรีต</item>
+        <item>เหล็ก</item>
+        <item>ไม้</item>
+        <item>ตึกครึ่งไม้</item>
+        <item>โครงสร้างชั่วคราว</item>
+    </string-array>
+
+    <string-array name="roof">
+        <item>กระเบื้องโมเนียร์</item>
+        <item>กระเบื้องลอน</item>
+        <item>ไม้</item>
+        <item>ดาดฟ้าคอนกรีต</item>
+        <item>เมททอลชีต</item>
+    </string-array>
+
+    <string-array name="user">
+        <item>เจ้าของ</item>
+        <item>ผู้เช่า</item>
+        <item>มีผู้ใช้ประโยชน์แต่ไม่ทราบสถานะผู้ใช้</item>
+        <item>อื่นๆ</item>
+    </string-array>
+
+    <!--Spinner activity_building_tab2-->
+    <string-array name="base">
+        <item>เสาเข็มเจาะ</item>
+        <item>เสาเข็มตอก</item>
+        <item>ไม่สามารถตรวจสอบ</item>
+        <item>อื่นๆ</item>
+    </string-array>
+
+    <string-array name="basic_structure">
+        <item>คอนกรีตหล่อในที่</item>
+        <item>คอนกรีตอัดแรงหล่อในที่</item>
+        <item>คอนกรีตสำเร็จรูปประกอบในที่</item>
+        <item>โครงสร้างเหล็ก</item>
+        <item>โครงสร้างไม้</item>
+        <item>ก่ออิฐฉาบปูน</item>
+        <item>ไม่สามารถตรวจสอบ</item>
+        <item>อื่นๆ</item>
+    </string-array>
+
+    <string-array name="wall">
+        <item>ก่ออิฐฉาบปูน</item>
+        <item>กระจก</item>
+        <item>กระเบื้องเคลือบ</item>
+        <item>กระเบื้องแผ่นเรียบ</item>
+        <item>ไม้เทียม</item>
+        <item>ไม้</item>
+        <item>ไม่สามารถตรวจสอบ</item>
+        <item>อื่นๆ</item>
+    </string-array>
+
+    <string-array name="surface">
+        <item>กระเบื้องเคลือบ</item>
+        <item>ปาร์เก้</item>
+        <item>ไม้</item>
+        <item>หินอ่อน</item>
+        <item>แกรนิต</item>
+        <item>หินขัด</item>
+        <item>ทรายล้าง</item>
+        <item>ขัดมัน</item>
+        <item>ขัดหยาบ</item>
+        <item>ไม่สามารถตรวจสอบ</item>
+        <item>อื่นๆ</item>
+    </string-array>
+
+    <string-array name="ceiling">
+        <item>ไม้</item>
+        <item>ยิบซั่มอลุมิเนียมทีบาร์</item>
+        <item>ยิบซั่มโครงเค่ราไม้</item>
+        <item>กระเบื้องแผ่นเรียบ</item>
+        <item>ไม้เทียม</item>
+        <item>คอนกรีตฉาบเรียบ</item>
+        <item>คอนกรีตเปลือย</item>
+        <item>ไม่มีฝ้าเพดาน</item>
+        <item>ไม่สามารถตรวจสอบ</item>
+        <item>อื่นๆ</item>
+    </string-array>
+
+    <string-array name="door_window">
+        <item>ไม้เนื้อแข็ง</item>
+        <item>ไม้สัก</item>
+        <item>อลูมิเนียมกระจก</item>
+        <item>ไม้กระจก</item>
+        <item>กระจกเปลือย</item>
+        <item>เหล็ก</item>
+        <item>ไม่สามารถตรวจสอบ</item>
+        <item>อื่นๆ</item>
+    </string-array>
+
+    <string-array name="color">
+        <item>ทาสีทั้งอาคาร</item>
+        <item>ทาสีบางส่วน</item>
+        <item>ไม่ทาสี</item>
+        <item>ไม่สามารถตรวจสอบ</item>
+    </string-array>
+
+    <!--Spinner activity_building_tab6-->
+    <string-array name="floor">
+        <item>พื้นที่ภายในอาคาร</item>
+        <item>พื้นที่ส่วนโล่งหลังคาคลุม</item>
+        <item>พื้นที่เฉลียงระเบียง</item>
+        <item>พื้นที่สำนักงาน</item>
+        <item>พื้นที่โรงงาน</item>
+        <item>พื้นที่โถงทางเดิน</item>
+        <item>พื้นที่ถนนทางเดิน</item>
+        <item>พื้นที่จอดรถ</item>
+        <item>พื้นที่ซักล้าง</item>
+        <item>พื้นที่กำแพงรั้ว</item>
+        <item>พื้นที่ประตูทางเข้า</item>
+    </string-array>
+
+    <!--Spinner activity_building_tab7-->
+    <string-array name="number">
+        <item>วิธีหลัก</item>
+        <item>วิธีสอบทาน 1</item>
+        <item>วิธีสอบทาน 2</item>
+    </string-array>
+
+    <!--Spinner activity_bank_ghb01-->
+    <string-array name="province">
+        <item>กระบี่</item>
+        <item>กรุงเทพมหานคร</item>
+        <item>กาญจนบุรี</item>
+        <item>กาฬสินธุ์</item>
+        <item>กำแพงเพชร</item>
+        <item>ขอนแก่น</item>
+        <item>จันทบุรี</item>
+        <item>ฉะเชิงเทรา</item>
+        <item>ชลบุรี</item>
+        <item>ชัยนาท</item>
+        <item>ชัยภูมิ</item>
+        <item>ชุมพร</item>
+        <item>ตรัง</item>
+        <item>ตราด</item>
+        <item>ตาก</item>
+        <item>นครนายก</item>
+        <item>นครปฐม</item>
+        <item>นครพนม</item>
+        <item>นครราชสีมา</item>
+        <item>นครศรีธรรมราช</item>
+        <item>นครสวรรค์</item>
+        <item>นนทบุรี</item>
+        <item>นราธิวาส</item>
+        <item>น่าน</item>
+        <item>บึงกาฬ</item>
+        <item>บุรีรัมย์</item>
+        <item>ปทุมธานี</item>
+        <item>ประจวบคีรีขันธ์</item>
+        <item>ปราจีนบุรี</item>
+        <item>ปัตตานี</item>
+        <item>พระนครศรีอยุธยา</item>
+        <item>พะเยา</item>
+        <item>พังงา</item>
+        <item>พัทลุง</item>
+        <item>พิจิตร</item>
+        <item>พิษณุโลก</item>
+        <item>ภูเก็ต</item>
+        <item>มหาสารคาม</item>
+        <item>มุกดาหาร</item>
+        <item>ยะลา</item>
+        <item>ยโสธร</item>
+        <item>ระนอง</item>
+        <item>ระยอง</item>
+        <item>ราชบุรี</item>
+        <item>ร้อยเอ็ด</item>
+        <item>ลพบุรี</item>
+        <item>ลำปาง</item>
+        <item>ลำพูน</item>
+        <item>ศรีสะเกษ</item>
+        <item>สกลนคร</item>
+        <item>สงขลา</item>
+        <item>สตูล</item>
+        <item>สมุทรปราการ</item>
+        <item>สมุทรสงคราม</item>
+        <item>สมุทรสาคร</item>
+        <item>สระบุรี</item>
+        <item>สระแก้ว</item>
+        <item>สิงห์บุรี</item>
+        <item>สุพรรณบุรี</item>
+        <item>สุราษฎร์ธานี</item>
+        <item>สุรินทร์</item>
+        <item>สุโขทัย</item>
+        <item>หนองคาย</item>
+        <item>หนองบัวลำภู</item>
+        <item>อำนาจเจริญ</item>
+        <item>อุดรธานี</item>
+        <item>อุตรดิตถ์</item>
+        <item>อุทัยธานี</item>
+        <item>อุบลราชธานี</item>
+        <item>อ่างทอง</item>
+        <item>เชียงราย</item>
+        <item>เชียงใหม่</item>
+        <item>เพชรบุรี</item>
+        <item>เพชรบูรณ์</item>
+        <item>เลย</item>
+        <item>แพร่</item>
+        <item>แม่ฮ่องสอน</item>
+        <item>ประจวบคีรีขันธ์</item>
+        <item>ชุมพร</item>
+    </string-array>
+
+    <string-array name="district">
+        <item>คลองท่อม</item>
+        <item>ปลายพระยา</item>
+        <item>ลำทับ</item>
+        <item>อ่าวลึก</item>
+        <item>เกาะลันตา</item>
+        <item>เขาพนม</item>
+        <item>เมืองกระบี่</item>
+    </string-array>
+
+    <string-array name="table">
+        <item>คลองท่อมเหนือ</item>
+        <item>คลองท่อมใต้</item>
+        <item>คลองพน</item>
+        <item>ทรายขาว</item>
+        <item>พรุดินนา</item>
+        <item>ห้วยน้ำขาว</item>
+        <item>เพหลา</item>
+        <item>คีรีวง</item>
+        <item>ปลายพระยา</item>
+        <item>เขาต่อ</item>
+        <item>เขาเขน</item>
+    </string-array>
+
+    <string-array name="zip_code">
+        <item>81120</item>
+        <item>81170</item>
+        <item>81160</item>
+        <item>81190</item>
+        <item>81110</item>
+        <item>81120</item>
+        <item>81150</item>
+        <item>81140</item>
+        <item>81000</item>
+        <item>81130</item>
+    </string-array>
+
+    <string-array name="objective">
+        <item>เพื่อพิจารณาขอสินเชื่อ</item>
+        <item>เพื่อทราบมูลค่าปัจจุบัน</item>
+        <item>เพื่อตั้งสำรองหนี้</item>
+        <item>เพื่อซื้อทรัพย์บังคับคดี</item>
+        <item>เพื่อวัตถุประสงค์ NPA</item>
+        <item>Backtest</item>
+    </string-array>
+
+    <string-array name="category_ghb02">
+        <item>เพื่อพิจารณาขอสินเชื่อ</item>
+        <item>เพื่อทราบมูลค่าปัจจุบัน</item>
+        <item>เพื่อตั้งสำรองหนี้</item>
+        <item>เพื่อซื้อทรัพย์บังคับคดี</item>
+        <item>เพื่อวัตถุประสงค์ NPA</item>
+        <item>Backtest</item>
+    </string-array>
+
+    <!--Spinner activity_bank_ghb01, activity_bank_ghb03-->
+    <string-array name="category_ghb">
+        <item>ซื้อที่ดินอาคาร</item>
+        <item>ซื้อที่ดินปลูกสร้าง</item>
+        <item>ปลูกสร้าง</item>
+        <item>ไถ่ถอนที่ดินปลูกสร้าง</item>
+        <item>ไถ่ถอนที่ดินอาคาร</item>
+        <item>ไถ่ถอนห้องชุด</item>
+        <item>ซื้อห้องชุด</item>
+        <item>ต่อเติมปรับปรุงซ่อมแซม</item>
+        <item>ชำระหนี้</item>
+        <item>โครงการแฟลต</item>
+    </string-array>
+
+    <!--Spinner activity_bank_ghb03-->
+    <string-array name="activities">
+        <item>รับเรื่อง</item>
+        <item>นัดหมาย 1</item>
+        <item>นัดหมาย 2</item>
+        <item>นำชี</item>
+    </string-array>
+
+    <string-array name="proceed">
+        <item>(สินเชื่อ)</item>
+        <item>ประเมิน</item>
+        <item>ธุรการ</item>
+        <item>นำชี</item>
+    </string-array>
+
+    <!--Spinner activity_bank_ghb04-->
+    <string-array name="category_ghb01">
+        <item>โฉนดที่ดิน</item>
+        <item>โฉนดตราจอง</item>
+        <item>นส.3ก</item>
+        <item>นส.3</item>
+        <item>อช.2</item>
+        <item>อื่นๆ</item>
+    </string-array>
+
+    <!--Spinner activity_bank_ghb05-->
+    <string-array name="investigate">
+        <item>แปลงคง</item>
+        <item>ระวางแผนที่</item>
+        <item>หมุดหลักเขต</item>
+        <item>อื่นๆ</item>
+    </string-array>
+
+    <!--Spinner activity_bank_ghb05-->
+    <string-array name="number_photo_two">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="number_photo">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="form_plan">
+        <item>แนวนอน 2 ภาพ</item>
+        <item>แนวนอน 3 ภาพ</item>
+        <item>แนวตั้ง 2 ภาพ</item>
+        <item>แนวตั้ง 3 ภาพ</item>
+        <item>แนวตั้ง 2 ภาพ , แนวนอน 1 ภาพ</item>
+        <item>เล็ก 1 ภาพ , แนวนอน 2 ภาพ</item>
+        <item>เล็ก 1 ภาพ , แนวตั้ง 1 ภาพ , แนวนอน 2 ภาพ</item>
+    </string-array>
+
+
+</resources>

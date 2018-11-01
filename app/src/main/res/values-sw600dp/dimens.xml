@@ -1,0 +1,35 @@
+<resources>
+    <!--activity_home-->
+    <!--imageView-->
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="top1">60dp</dimen>
+    <dimen name="width_logo">200dp</dimen>
+    <dimen name="height_logo">180dp</dimen>
+
+    <!--textView1-->
+    <dimen name="textSize_text1">50sp</dimen>
+    <dimen name="height_text1">70dp</dimen>
+
+    <!--textView2-->
+    <dimen name="textSize_text2">30sp</dimen>
+    <dimen name="height_text2">35dp</dimen>
+
+    <!--button_and_button1-->
+    <dimen name="top">50dp</dimen>
+    <dimen name="textSize_text">30sp</dimen>
+    <dimen name="textSize_button">40sp</dimen>
+    <dimen name="height_button">120dp</dimen>
+    <dimen name="top_button1">18dp</dimen>
+
+    <!--activity_main-->
+    <!--imageView-->
+    <dimen name="height_logo1">200dp</dimen>
+    <dimen name="top2">270dp</dimen>
+
+    <!--textView1-->
+    <dimen name="textSize_text3">50sp</dimen>
+    <!--textView2-->
+    <dimen name="textSize_text4">30sp</dimen>
+
+
+</resources>

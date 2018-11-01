@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".bank_ghb.BankGHB04Activity">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="ScrollViewCount,UselessParent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:ignore="ScrollViewSize,UselessLeaf">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/imageView7"
+                            android:layout_width="200dp"
+                            android:layout_height="90dp"
+                            android:layout_marginLeft="22dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/logo"
+                            tools:ignore="ContentDescription,RtlHardcoded" />
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/background_light"
+                            android:gravity="center"
+                            android:text="PROSPEC APPRAISAL"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/holo_orange_dark"
+                            android:textSize="36dp"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText,SpUsage" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@android:color/holo_orange_dark" />
+
+                <com.kofigyan.stateprogressbar.StateProgressBar
+                    android:id="@+id/your_state_progress_bar_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="15dp"
+                    app:spb_currentStateNumber="one"
+                    app:spb_maxStateNumber="five"
+                    app:spb_stateBackgroundColor="#BDBDBD"
+                    app:spb_stateForegroundColor="#009688"
+                    app:spb_stateNumberBackgroundColor="#808080"
+                    app:spb_stateNumberForegroundColor="#eeeeee"
+                    app:spb_currentStateDescriptionColor="#009688"
+                    app:spb_stateDescriptionColor="#808080"
+                    app:spb_animateToCurrentProgressState="true"
+                    app:spb_checkStateCompleted="true"/>
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:orientation="vertical">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="รายการ"
+                            android:textSize="@dimen/h2"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="16dp"
+                            android:text="จำนวนเนื้อที่"
+                            android:textSize="@dimen/h2"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="16dp"
+                            android:text="ราคา"
+                            android:textSize="@dimen/h2"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="16dp"
+                            android:text="จำนวนเงิน"
+                            android:textSize="@dimen/h2"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="พื้นที่ใช้สอยในตัวอาคาร"
+                            android:textSize="@dimen/h2"
+                            android:textStyle="bold" />
+
+
+                        <EditText
+                            android:inputType="number"
+                            android:id="@+id/edtArray"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="จำนวน"
+                            android:textAlignment="center"
+                            android:textColorHint="@color/edit_text"
+                            android:textSize="@dimen/h2" />
+
+                        <EditText
+                            android:id="@+id/edtTHB"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="บาท"
+                            android:textAlignment="center"
+                            android:textColorHint="@color/edit_text"
+                            android:textSize="@dimen/h2" />
+
+                        <EditText
+                            android:id="@+id/sun1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="จำนวน x บาท"
+                            android:textAlignment="center"
+                            android:textColorHint="@color/edit_text"
+                            android:textSize="@dimen/h2" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="พื้นที่เฉลียง/ระเบียง"
+                            android:textSize="@dimen/h2"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="จำนวน"
+                            android:textAlignment="center"
+                            android:textColorHint="@color/edit_text"
+                            android:textSize="@dimen/h2" />
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="บาท"
+                            android:textAlignment="center"
+                            android:textColorHint="@color/edit_text"
+                            android:textSize="@dimen/h2" />
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="จำนวน x บาท"
+                            android:textAlignment="center"
+                            android:textColorHint="@color/edit_text"
+                            android:textSize="@dimen/h2" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="พื้นที่ส่วนโล่งคลุม"
+                            android:textSize="@dimen/h2"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/EditText7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="จำนวน"
+                            android:textAlignment="center"
+                            android:textColorHint="@color/edit_text"
+                            android:textSize="@dimen/h2" />
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="บาท"
+                            android:textAlignment="center"
+                            android:textColorHint="@color/edit_text"
+                            android:textSize="@dimen/h2" />
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:hint="จำนวน x บาท"
+                            android:textAlignment="center"
+                            android:textColorHint="@color/edit_text"
+                            android:textSize="@dimen/h2" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="พื้นที่ซักล้าง"
+                            android:textSize="@dimen/h2" />
+
+                        <EditText
+                            android:id="@+id/EditText7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="จำนวน"
+                            android:textAlignment="center"
+                            android:textColorHint="@color/edit_text"
+                            android:textSize="@dimen/h2" />
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="บาท"
+                            android:textAlignment="center"
+                            android:textColorHint="@color/edit_text"
+                            android:textSize="@dimen/h2" />
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="จำนวน x บาท"
+                            android:textAlignment="center"
+                            android:textColorHint="@color/edit_text"
+                            android:textSize="@dimen/h2" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="พื้นที่รั้ว"
+                            android:textSize="@dimen/h2" />
+
+                        <EditText
+                            android:id="@+id/EditText7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="จำนวน"
+                            android:textAlignment="center"
+                            android:textColorHint="@color/edit_text"
+                            android:textSize="@dimen/h2" />
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="บาท"
+                            android:textAlignment="center"
+                            android:textColorHint="@color/edit_text"
+                            android:textSize="@dimen/h2" />
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="จำนวน x บาท"
+                            android:textAlignment="center"
+                            android:textColorHint="@color/edit_text"
+                            android:textSize="@dimen/h2" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="พื้นที่ประตูรั้ว"
+                            android:textSize="@dimen/h2" />
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="จำนวน"
+                            android:textAlignment="center"
+                            android:textColorHint="@color/edit_text"
+                            android:textSize="@dimen/h2" />
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="บาท"
+                            android:textAlignment="center"
+                            android:textColorHint="@color/edit_text"
+                            android:textSize="@dimen/h2" />
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="จำนวน x บาท"
+                            android:textAlignment="center"
+                            android:textColorHint="@color/edit_text"
+                            android:textSize="@dimen/h2" />
+                    </TableRow>
+
+                    <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ราคาอาคารก่อนหักค่าเสื่อมและค่าไม่ทาสี"
+                        android:textSize="@dimen/h2" />
+
+                    <EditText
+                        android:id="@+id/edtShow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="ผลรวมจำนวนเงิน"
+                        android:textAlignment="center"
+                        android:textColorHint="@color/edit_text"
+                        android:textSize="@dimen/h2" />
+                </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ค่าเสื่อมและค่าไม่ทาสี"
+                            android:textSize="@dimen/h2" />
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="บาท/ปี"
+                            android:textAlignment="center"
+                            android:textColorHint="@color/edit_text"
+                            android:textSize="@dimen/h2" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ค่าเสื่อมปีละ"
+                            android:textSize="@dimen/h2" />
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="บาท"
+                            android:textAlignment="center"
+                            android:textColorHint="@color/edit_text"
+                            android:textSize="@dimen/h2" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="%ค่าไม่ทาสี"
+                            android:textSize="@dimen/h2" />
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="บาท"
+                            android:textAlignment="center"
+                            android:textColorHint="@color/edit_text"
+                            android:textSize="@dimen/h2" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="รวม"
+                            android:textSize="@dimen/h2" />
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="รวม%"
+                            android:textAlignment="center"
+                            android:textColorHint="@color/edit_text"
+                            android:textSize="@dimen/h2" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ราคาอาคารหลังหักค่าเสื่อมและไม่ทาสี"
+                            android:textSize="@dimen/h2" />
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="รวมบาท"
+                            android:textAlignment="center"
+                            android:textColorHint="@color/edit_text"
+                            android:textSize="@dimen/h2" />
+                    </TableRow>
+
+
+                </TableLayout>
+
+            </LinearLayout>
+        </ScrollView>
+</LinearLayout>

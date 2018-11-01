@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".bank_ghb.MenuBanksActivity">
+
+    <!--Logo-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="@dimen/width_logo"
+            android:layout_height="@dimen/height_logo"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/top1"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_text1"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="PROSPEC APPRAISAL"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/textSize_text1"
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_text2"
+            android:layout_gravity="center"
+            android:layout_marginTop="3dp"
+            android:text="บริษัท โปรสเปค แอพเพรซัล จำกัด"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/textSize_text2" />
+    </LinearLayout>
+
+
+    <!--Controller-->
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/top"
+            android:gravity="center"
+            android:text="เลือกทำรายการ"
+            android:textAlignment="center"
+            android:textColor="#4b4848"
+            android:textSize="@dimen/textSize_text"
+            android:textStyle="bold" />
+
+        <!--ภาครายงาน-->
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_button"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/background_button"
+            android:text="ภาครายงาน"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/textSize_button"
+            android:textStyle="bold" />
+
+        <!--ภาคผนวกแนบรายงาน-->
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_button"
+            android:layout_gravity="center"
+            android:background="@drawable/background_button"
+            android:text="ภาคผนวกแนบรายงาน"
+            android:layout_marginTop="@dimen/top_button1"
+            android:layout_marginBottom="25dp"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/textSize_button"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</RelativeLayout>
+

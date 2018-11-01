@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".all_land_and_building.BuildingsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="ScrollViewCount,UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:ignore="ScrollViewSize,UselessLeaf">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="290dp"
+                android:background="@drawable/background1"
+                android:gravity="bottom"
+                android:text="PROSPEC APPRAISAL"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_orange_dark"
+                android:textSize="36dp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,SpUsage" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                tools:ignore="DisableBaselineAlignment">
+
+                <LinearLayout
+                    android:layout_width="290dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:background="#96e6e7"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/ic_building"
+                        android:tint="@android:color/black"
+                        tools:ignore="ContentDescription" />
+
+                    <Button
+                        android:id="@+id/button4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:background="#5ae4e6"
+                        android:padding="8dp"
+                        android:text="สภาพอาคารทั่วไป"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="290dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:background="#c0f282"
+                    android:orientation="vertical"
+                    tools:ignore="ObsoleteLayoutParam">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="95dp"
+                        android:layout_height="90dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/ic_in"
+                        android:tint="@android:color/black"
+                        tools:ignore="ContentDescription" />
+
+                    <Button
+                        android:id="@+id/button6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:background="#9dec3c"
+                        android:padding="8dp"
+                        android:text="สภาพภายในอาคาร"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                tools:ignore="DisableBaselineAlignment">
+
+                <LinearLayout
+                    android:layout_width="290dp"
+                    android:layout_height="218dp"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:background="#ef89b3"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/ic_note"
+                        android:tint="@android:color/black"
+                        tools:ignore="ContentDescription" />
+
+                    <Button
+                        android:id="@+id/button7"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="18dp"
+                        android:background="#f95c9d"
+                        android:padding="8dp"
+                        android:text="การตรวจอาคารทางกฎหมาย"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="30sp"
+
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="290dp"
+                    android:layout_height="218dp"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:background="#f9f987"
+                    android:orientation="vertical"
+                    tools:ignore="ObsoleteLayoutParam">
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/ic_icon_structure"
+                        android:tint="@android:color/black"
+                        tools:ignore="ContentDescription" />
+
+                    <Button
+                        android:id="@+id/button8"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="18dp"
+                        android:background="#f5f53c"
+                        android:padding="8dp"
+                        android:text="ข้อมูลจำเพาะอาคาร"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="29sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                tools:ignore="DisableBaselineAlignment">
+
+                <LinearLayout
+                    android:layout_width="290dp"
+                    android:layout_height="218dp"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:background="#f9c159"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="80dp"
+                        android:layout_height="75dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/ic_building1"
+                        android:tint="@android:color/black"
+                        tools:ignore="ContentDescription" />
+
+                    <Button
+                        android:id="@+id/button9"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:background="#edad35"
+                        android:padding="8dp"
+                        android:text="เทียบเคียงมาตรฐานอาคาร สมท."
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="290dp"
+                    android:layout_height="218dp"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:background="#d9a8f4"
+                    android:orientation="vertical"
+                    tools:ignore="ObsoleteLayoutParam">
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/ic_excel"
+                        android:tint="@android:color/black"
+                        tools:ignore="ContentDescription" />
+
+                    <Button
+                        android:id="@+id/button10"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:background="#c874f7"
+                        android:padding="8dp"
+                        android:text="ตารางประเมินราคาอาคาร"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                tools:ignore="DisableBaselineAlignment">
+
+                <LinearLayout
+                    android:layout_width="290dp"
+                    android:layout_height="218dp"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:background="#f27f77"
+                    android:orientation="vertical"
+                    tools:ignore="InefficientWeight">
+
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="80dp"
+                        android:layout_height="75dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/ic_notpad"
+                        android:tint="@android:color/black"
+                        tools:ignore="ContentDescription" />
+
+                    <Button
+                        android:id="@+id/button11"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:background="#fd5a4e"
+                        android:padding="8dp"
+                        android:text="วิธีการประเมินราคา"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

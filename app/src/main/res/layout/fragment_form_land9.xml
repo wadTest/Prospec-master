@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--Toolbar-->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_land_tab1"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <!--Content-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <!--From-->
+        <LinearLayout
+            android:paddingBottom="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--Tile การตรวจตำแหน่งที่ดิน-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/check1"
+                android:textSize="@dimen/h1"
+                android:textStyle="bold" />
+
+            <!--Tile ตรวจเอกสารสำนักงานที่ดิน-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/check2"
+                android:layout_marginTop="16dp"
+                android:textSize="@dimen/h1"
+                android:textStyle="bold" />
+
+            <!--Tile เอกสารที่สำนักงานที่ดิน-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/check3"
+                android:layout_marginTop="16dp"
+                android:textSize="@dimen/h1"
+                android:textStyle="bold" />
+
+            <!--Tile เอกสารสิทธิ์ฉบับกรมที่ดิน-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/check4"
+                android:layout_marginTop="16dp"
+                android:textSize="@dimen/h1"
+                android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+                <CheckBox
+                    android:id="@+id/checkbox1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ตรวจสอบได้"
+                    android:textSize="@dimen/h2" />
+
+                <CheckBox
+                    android:id="@+id/checkbox2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="จัดเป็นภาคผนวก"
+                    android:textSize="@dimen/h2" />
+        </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/check5"
+                    android:textSize="@dimen/h2" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp">
+
+                <CheckBox
+                    android:id="@+id/checkbox3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ตรวจสอบได้"
+                    android:textSize="@dimen/h2" />
+
+                <CheckBox
+                    android:id="@+id/checkbox4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="จัดเป็นภาคผนวก"
+                    android:textSize="@dimen/h2" />
+            </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/check6"
+                    android:layout_marginTop="16dp"
+                    android:textSize="@dimen/h2" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/h2">
+
+                <CheckBox
+                    android:id="@+id/checkbox5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ตรวจสอบได้"
+                    android:textSize="@dimen/h2" />
+
+                <CheckBox
+                    android:id="@+id/checkbox6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="จัดเป็นภาคผนวก"
+                    android:layout_marginLeft="16dp"
+                    android:textSize="@dimen/h2" />
+            </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/check7"
+                    android:layout_marginTop="16dp"
+                    android:textSize="@dimen/h2" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/h2">
+
+                <CheckBox
+                    android:id="@+id/checkbox7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ตรวจสอบได้"
+                    android:textSize="@dimen/h2" />
+
+                <CheckBox
+                    android:id="@+id/checkbox8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="จัดเป็นภาคผนวก"
+                    android:textSize="@dimen/h2" />
+            </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/check8"
+                    android:layout_marginTop="16dp"
+                    android:textSize="@dimen/h2" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp">
+
+                <CheckBox
+                    android:id="@+id/checkbox9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ตรวจสอบได้"
+                    android:textSize="@dimen/h2" />
+
+                <CheckBox
+                    android:id="@+id/checkbox10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="จัดเป็นภาคผนวก"
+                    android:layout_marginLeft="16dp"
+                    android:textSize="@dimen/h2" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/check9"
+                android:layout_marginTop="16dp"
+                android:textSize="@dimen/h2" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/check10"
+                    android:textSize="@dimen/h2" />
+
+                <Spinner
+                    android:id="@+id/spinner1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:entries="@array/location" />
+            </LinearLayout>
+
+                <EditText
+                    android:id="@+id/EditText1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/edit_text"
+                    android:hint="พบหมุดหลักเขตเลขที่..."
+                    android:layout_marginTop="16dp"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/h2" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/check11"
+                    android:layout_marginTop="16dp"
+                    android:textSize="@dimen/h2" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp">
+
+                <CheckBox
+                    android:id="@+id/checkbox11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ตรวจสอบได้"
+                    android:textSize="@dimen/h2" />
+
+                <CheckBox
+                    android:id="@+id/checkbox12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="จัดเป็นภาคผนวก"
+                    android:textSize="@dimen/h2"/>
+            </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/check12"
+                    android:layout_marginTop="16dp"
+                    android:textSize="@dimen/h2" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp">
+
+                <CheckBox
+                    android:id="@+id/checkbox13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ตรวจสอบได้"
+                    android:textSize="@dimen/h2" />
+
+                <CheckBox
+                    android:id="@+id/checkbox14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="จัดเป็นภาคผนวก"
+                    android:textSize="@dimen/h2" />
+            </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/check13"
+                    android:layout_marginTop="16dp"
+                    android:textSize="@dimen/h2" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp">
+
+                <CheckBox
+                    android:id="@+id/checkbox15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ตรวจสอบได้"
+                    android:textSize="@dimen/h2" />
+
+                <CheckBox
+                    android:id="@+id/checkbox16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="จัดเป็นภาคผนวก"
+                    android:textSize="@dimen/h2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/check14"
+                    android:textSize="@dimen/h2" />
+
+                <EditText
+                    android:id="@+id/EditText2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="กรอกข้อมูล"
+                    android:textColorHint="@color/edit_text"
+                    android:layout_marginLeft="16dp"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/h2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp">
+
+                <CheckBox
+                    android:id="@+id/checkbox17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ตรวจสอบได้"
+                    android:textSize="@dimen/h2" />
+
+                <CheckBox
+                    android:id="@+id/checkbox18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="จัดเป็นภาคผนวก"
+                    android:textSize="@dimen/h2" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/check15"
+                android:textSize="@dimen/h2"
+                android:layout_marginTop="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/check16"
+                android:textSize="@dimen/h2" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/check17"
+                    android:textSize="@dimen/h2" />
+
+                <EditText
+                    android:id="@+id/EditText3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="กรอกข้อมูล"
+                    android:textColorHint="@color/edit_text"
+                    android:layout_marginLeft="16dp"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/h2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/check18"
+                    android:textSize="@dimen/h2"/>
+
+                <EditText
+                    android:id="@+id/EditText4"
+                    android:textColorHint="@color/edit_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="กรอกข้อมูล"
+                    android:layout_marginLeft="16dp"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/h2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/check19"
+                    android:textSize="@dimen/h2" />
+
+                <EditText
+                    android:textColorHint="@color/edit_text"
+                    android:id="@+id/EditText5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="กรอกข้อมูล"
+                    android:layout_marginLeft="16dp"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/h2" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/check20"
+                android:textSize="@dimen/h2" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/check21"
+                android:textSize="@dimen/h2" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

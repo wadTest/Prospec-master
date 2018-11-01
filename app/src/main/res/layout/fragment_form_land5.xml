@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--Toolbar-->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_land_tab1"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <!--Content-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <!--From-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="50dp">
+
+            <!--Tile ส่วนปรับปรุงที่ดิน-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pubpung1"
+                android:textSize="@dimen/h1"
+                android:textStyle="bold" />
+
+            <!--ที่ดินพร้อมสิ่งปลูกสร้าง-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+
+                <!--Tile ที่ดินพร้อมสิ่งปลูกสร้าง-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pubpung2"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="อาคาร"
+                    android:textSize="@dimen/h2" />
+            </LinearLayout>
+
+            <!--Tile-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pubpung3"
+                android:textSize="@dimen/h1"
+                android:textStyle="bold" />
+
+            <!--Tile-->
+            <CheckBox
+                android:id="@+id/checkbox1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ที่ดินรอการพัฒนา"
+                android:textSize="@dimen/h2"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/checkbox2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ที่ดินจัดสรร"
+                android:textSize="@dimen/h2"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/building1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pubpung4"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/spinner2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:entries="@array/namelocation" />
+            </LinearLayout>
+
+            <!--Tile ที่ดินใช้ประโยชน์ทางการเกศตร-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <!--Tile-->
+                <CheckBox
+                    android:id="@+id/checkbox3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ที่ดินใช้ประโยชน์ทางการเกศตร"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold" />
+
+                <!--TextFiled-->
+                <EditText
+                    android:id="@+id/EditText1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:hint="@string/not_null"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/edit_text" />
+            </LinearLayout>
+
+            <!--Tile ที่ดินรกร้างยังไม่ใช้ประโยชน์-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <!--Tile-->
+                <CheckBox
+                    android:id="@+id/checkbox4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ที่ดินรกร้างยังไม่ใช้ประโยชน์"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold" />
+
+                <!--TextFiled-->
+                <EditText
+                    android:id="@+id/EditText2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:hint="@string/not_null"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/edit_text" />
+            </LinearLayout>
+
+            <!--Tile ทระดับที่ดิน-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pubpung5"
+                android:textSize="@dimen/h1"
+                android:textStyle="bold" />
+
+            <!--ระดับที่ดิน-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <!--Select-->
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="ถมแล้ว"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="ยังไม่ถม"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="ถมบางส่วน"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <!--Tile-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pubpung6"
+                android:textSize="@dimen/h1"
+                android:textStyle="bold" />
+
+            <!--Tile พื้นที่ถม-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pubpung15"
+                android:layout_marginTop="16dp"
+                android:textSize="@dimen/h1"
+                android:textStyle="bold" />
+
+            <!--พื้นที่ถม-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pubpung7"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/pubpung8"
+                    android:textSize="@dimen/h2" />
+
+                <!--TextFiled-->
+                <EditText
+                    android:id="@+id/EditText3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:hint="@string/not_null"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/edit_text" />
+            </LinearLayout>
+
+
+            <!--พื้นที่ถม-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pubpung9"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/pubpung10"
+                    android:textSize="@dimen/h2" />
+
+                <!--TextFiled-->
+                <EditText
+                    android:id="@+id/EditText4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:hint="@string/not_null"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/edit_text" />
+            </LinearLayout>
+
+            <!--ผลรวม-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <!--Tile-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pubpung11"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold" />
+
+                <!--TextFiled-->
+                <EditText
+                    android:id="@+id/EditText5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:hint="@string/not_null"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/edit_text" />
+            </LinearLayout>
+
+            <!--เฉลี่ย-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <!--Tile-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pubpung12"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold" />
+
+                <!--TextFiled-->
+                <EditText
+                    android:id="@+id/EditText6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:hint="@string/not_null"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/edit_text" />
+            </LinearLayout>
+
+            <RadioButton
+                android:id="@+id/radioButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:text="สภาพที่ดินเดิมลาดเอียงสูงต่ำตามธรรมชาติ"
+                android:textSize="@dimen/h2" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:text="ไม่สามารถตรวจสอบ"
+                android:textSize="@dimen/h2" />
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="รายการ"
+                        android:textSize="@dimen/h2"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pubpung13"
+                        android:textSize="@dimen/h2"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pubpung14"
+                        android:textSize="@dimen/h2"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pubpung15"
+                        android:textSize="@dimen/h2"
+                        android:textStyle="bold" />
+
+
+                    <EditText
+                        android:id="@+id/EditText7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="กรอกข้อมูล กี่ %"
+                        android:textAlignment="center"
+                        android:textColorHint="@color/edit_text"
+                        android:textSize="@dimen/h2" />
+
+                    <EditText
+                        android:id="@+id/EditText8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="กรอกข้อมูล กี่ %"
+                        android:textAlignment="center"
+                        android:textColorHint="@color/edit_text"
+                        android:textSize="@dimen/h2" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pubpung16"
+                        android:textSize="@dimen/h2"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/EditText9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="กรอกข้อมูล กี่ %"
+                        android:textAlignment="center"
+                        android:textColorHint="@color/edit_text"
+                        android:textSize="@dimen/h2" />
+
+                    <EditText
+                        android:id="@+id/EditText10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="กรอกข้อมูล กี่ %"
+                        android:textColorHint="@color/edit_text"
+                        android:textSize="@dimen/h2" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ผลลัพธ์"
+                        android:textSize="@dimen/h2"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/EditText11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="ผลลัพธ์"
+                        android:textAlignment="center"
+                        android:textColorHint="@color/edit_text"
+                        android:textSize="@dimen/h2" />
+
+                    <EditText
+                        android:id="@id/EditText12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="ผลลัพธ์"
+                        android:textAlignment="center"
+                        android:textColorHint="@color/edit_text"
+                        android:textSize="@dimen/h2" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pubpung12"
+                        android:textSize="@dimen/h2" />
+
+                    <EditText
+                        android:id="@+id/EditText13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="ผลลัพธ์"
+                        android:textAlignment="center"
+                        android:textColorHint="@color/edit_text"
+                        android:textSize="@dimen/h2" />
+                </TableRow>
+            </TableLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

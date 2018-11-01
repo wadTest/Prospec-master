@@ -1,0 +1,43 @@
+<resources>
+    <!--activity_home-->
+    <!--imageView-->
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="top1">50dp</dimen>
+    <dimen name="width_logo">100dp</dimen>
+    <dimen name="height_logo">90dp</dimen>
+    <dimen name="marginTop1">20dp</dimen>
+
+    <!--Size textView-->
+    <dimen name="textSize_text01">24sp</dimen>
+    <dimen name="textSize_text02">20sp</dimen>
+    <dimen name="textSize_text03">18sp</dimen>
+    <dimen name="textSize_text04">20sp</dimen>
+    <dimen name="textSize_text05">30sp</dimen>
+    <dimen name="textSize_text06">40sp</dimen>
+    <dimen name="textSize_text1">30sp</dimen>
+    <!--<dimen name="height_text1">40dp</dimen>-->
+    <!--<dimen name="height_text2">30dp</dimen>-->
+    <!--<dimen name="textSize_text2">20sp</dimen>-->
+
+    <!--button_and_button1-->
+    <dimen name="top">220dp</dimen>
+    <dimen name="textSize_text">20sp</dimen>
+    <dimen name="textSize_button">30sp</dimen>
+    <dimen name="height_button">80dp</dimen>
+    <dimen name="top_button1">12dp</dimen>
+
+    <!--activity_main-->
+    <!--imageView-->
+    <dimen name="height_logo1">110dp</dimen>
+    <dimen name="top2">170dp</dimen>
+
+    <!--textView1-->
+    <dimen name="textSize_text3">30sp</dimen>
+    <dimen name="textSize_text4">20sp</dimen>
+    <dimen name="height_logo3">90dp</dimen>
+
+    <dimen name="h1">24sp</dimen>
+    <dimen name="h2">18sp</dimen>
+
+
+</resources>
